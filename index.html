@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="de">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>our.HH // best klassiker zum klazzischem</title>
+<style>
+html{background:#f5f5f0;color:#0a0a0a;font-family:monospace;padding:0;margin:0;height:100vh;display:grid;place-items:center}
+#story{text-align:center;line-height:1.6;max-width:600px;padding:24px;border:1px solid #0a0a0a}
+a{color:#0a0a0a;border-bottom:1px solid #0a0a0a;text-decoration:none}
+.small{font-size:11px;opacity:.6;margin-top:24px}
+</style>
+<div id="story"></div>
+<script>
+// our.HH - best klassiker zum klazzischem - 1ns
+const s=[
+`Du: hallo ich habe vulkan und du ((https://iki1uc.github.io/ich.vulkan/))`,
+`((ich)) ((<a href="https://iki1uc.github.io/WELCOME/">WELCOME</a>) <a href="https://iki1uc.github.io/ich.vulkan/">ich.vulkan</a>)`,
+`aber (<a href="https://iki1uc.github.io/buerger.HH/">buerger.HH</a>)`,
+`9e: ich.e vulkan.e bürger.e apfel.e hirte.e schach.e kristall.e atem.e friede.e`,
+`// iki1uc // gekommen um zu bleiben // ozean gegen jede spucke //`
+];
+let i=0;
+const el=document.getElementById('story');
+function next(){
+ el.innerHTML = s[i] + `<div class="small">${i+1}/${s.length} — our.HH — best klassiker</div>`;
+ i=(i+1)%s.length;
+}
+next();
+setInterval(next,2500);
+</script>
